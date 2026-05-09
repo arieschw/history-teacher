@@ -1,26 +1,89 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  background: #f4efe3;
+  font-family: var(--font-frank), "Times New Roman", serif;
+  color: #1a1209;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.newspaper-columns {
+  column-count: 3;
+  column-gap: 1.5rem;
+  column-rule: 1px solid #c8b89a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (max-width: 900px) {
+  .newspaper-columns {
+    column-count: 2;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 600px) {
+  .newspaper-columns {
+    column-count: 1;
+  }
+}
+
+.column-section {
+  break-inside: avoid;
+  margin-bottom: 1.25rem;
+}
+
+/* Timeline */
+.timeline-container {
+  position: relative;
+  padding-top: 2.5rem;
+  overflow-x: auto;
+}
+
+.timeline-rail {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-width: 600px;
+}
+
+.timeline-rail::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background: #1a1209;
+  z-index: 0;
+}
+
+.timeline-event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #b45309;
+  border: 3px solid #1a1209;
+  flex-shrink: 0;
+}
+
+.timeline-year {
+  font-size: 0.75rem;
+  font-weight: 900;
+  margin-top: 0.4rem;
+  color: #1a1209;
+}
+
+.timeline-desc {
+  font-size: 0.65rem;
+  color: #5a4a2a;
+  text-align: center;
+  max-width: 90px;
+  margin-top: 0.2rem;
+  line-height: 1.3;
 }
