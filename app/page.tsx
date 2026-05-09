@@ -596,7 +596,7 @@ export default function Home() {
         <div className={`px-4 py-6 ${sidePanel || chatOpen ? "flex gap-4 items-start max-w-7xl mx-auto" : "max-w-5xl mx-auto"}`}>
 
           {/* ════ MAIN ARTICLE ════ */}
-          <div className={sidePanel || chatOpen ? "w-3/5 min-w-0" : "w-full"}>
+          <div className={`${sidePanel || chatOpen ? "w-3/5 min-w-0" : "w-full"} bg-white shadow-md p-6`}>
 
             {/* Back button + Breadcrumb */}
             {history.length > 0 && (
@@ -625,8 +625,8 @@ export default function Home() {
             {/* Headline */}
             <div className="border-y-4 border-black py-4 mb-2 text-center">
               <h2
-                className="text-5xl font-black leading-tight mb-3"
-                style={{ fontFamily: "var(--font-frank)" }}
+                className="text-5xl leading-tight mb-3"
+                style={{ fontFamily: "var(--font-secular)" }}
               >
                 {article.title}
               </h2>
