@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
 [SECTION][HEADING]הרקע ההיסטורי[/HEADING][CONTENT]ההקשר שהוביל לנושא[/CONTENT][/SECTION]
 [SECTION][HEADING]הכוחות הכלכליים[/HEADING][CONTENT]מי החזיק בכסף ובכוח, ואיך זה השפיע[/CONTENT][/SECTION]
 [SECTION][HEADING]המתח התרבותי והדתי[/HEADING][CONTENT]קווי השבר התרבותיים והדתיים[/CONTENT][/SECTION]
-[SECTION][HEADING]מקורות הסכסוך[/HEADING][CONTENT]הסיבות האמיתיות מאחורי הסכסוך[/CONTENT][/SECTION]
+[SECTION][HEADING]שורשים וסיבות[/HEADING][CONTENT]הסיבות האמיתיות מאחורי האירוע — לא רק הטריגר אלא השורשים העמוקים[/CONTENT][/SECTION]
 [SECTION][HEADING]המנהיגים משני הצדדים[/HEADING][CONTENT]שמות ספציפיים של האנשים המרכזיים[/CONTENT][/SECTION]
 [SECTION][HEADING]מי הרוויח? מי הפסיד?[/HEADING][CONTENT]ניתוח המנצחים והמפסידים[/CONTENT][/SECTION]
 [SECTION][HEADING]המורשת - מה נשאר עד היום?[/HEADING][CONTENT]איך זה מהדהד בעולם של היום[/CONTENT][/SECTION]
